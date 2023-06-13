@@ -39,7 +39,7 @@ const depositRequest = (req, res) => {
   } else {
     res.status(200).json({
       title: "Transaction denied",
-      message: `You can deposit up to ₱10,000 per transaction.`,
+      message: `You can deposit up to ₱10,000 per transaction`,
       status: false,
     });
   }
@@ -84,14 +84,14 @@ const withdrawRequest = (req, res) => {
     } else {
       res.status(200).json({
         title: "Transaction denied",
-        message: "You have insufficient funds to complete this transaction.",
+        message: "You can withdraw up to ₱10,000 per transaction",
         status: false,
       });
     }
   } else {
     res.status(200).json({
       title: "Transaction denied",
-      message: `You can withdraw up to ₱10,000 per transaction.`,
+      message: "You have insufficient funds to complete this transaction",
       status: false,
     });
   }
