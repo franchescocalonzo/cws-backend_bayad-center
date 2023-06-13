@@ -2,10 +2,10 @@
   "name": "cws-api",
   "version": "1.0.0",
   "description": "This is express project for cws backend api",
-  "main": "server.js",
+  "main": "functions/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "nodemon functions/server.js",
     "dev": "nodemon server.js"
   },
   "author": "Franchesco Calonzo",
