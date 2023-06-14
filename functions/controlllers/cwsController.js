@@ -50,8 +50,6 @@ const depositRequest = (req, res) => {
 const withdrawRequest = (req, res) => {
   const { amount } = req.body;
   const currentBalance = database.getBalance();
-  console.log("current balance:", currentBalance);
-  console.log("request amount:", amount);
   if (!amount || typeof amount !== "number" || amount == 0) {
     res.status(400).send({ message: "Bad request." });
   }
@@ -104,7 +102,8 @@ const doValidate = (req, res) => {
 
   const defaultPin = database.getDefaultPin();
 
-  if (pin === defaultPin || pin === process.env.USER_PIN || pin === process.env.USER_TEST) {
+  // PIN validation
+  if (pin === defaultPin) {
     res.status(200).json({ status: true, pin_status: true });
   } else if (!pin || !req.body) {
     res.status(400).send({ message: "Bad request." });
