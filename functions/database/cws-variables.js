@@ -1,4 +1,6 @@
-var defaultPin = 123456;
+// Database Defaults
+
+const defaultPin = 123456;
 var balance = 1000;
 
 function getBalance() {
