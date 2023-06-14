@@ -45,10 +45,10 @@ These are the endpoints that I created in order to make the application operatio
 ## Links
 
 ### API PUBLIC URL
-[cws.franchescocalonzo.dev](cws.franchescocalonzo.dev/balance-inquiry)
+[cws.franchescocalonzo.dev/balance-inquiry](https://cws.franchescocalonzo.dev/api/balance-inquiry) - you can test it via POSTMAN
 
 ### FRONT-END APPLICATION
-[cws-fe.franchescocalonzo.dev](https:cws-fe.franchescocalonzo.dev/)
+[https:cws-fe.franchescocalonzo.dev/](https://cws-fe.franchescocalonzo.dev/)
 
 
 
